@@ -1,0 +1,42 @@
+
+<table id="table">
+  
+ 
+  <tbody>
+    <tr>
+      <td>Isla</td>
+      <td>Leo</td>
+      <td>Samuel</td>
+
+    </tr>
+    <tr>
+      <td>Sleeping Bags</td>
+      <td>2</td>
+      <td>$159.95</td>
+    </tr>
+    <tr>
+      <td>Camp Chairs</td>
+      <td>2</td>
+      <td>$39.50</td>
+     
+    </tr>
+     <tr>
+      <td>Olivia</td>
+      <td>alva</td>
+      <td>george</td>
+     
+    </tr>
+  </tbody>
+ 
+</table>
+<script>
+function modifytablecel(rowindex, columnindex, newtext){
+    // var tablcell = document.querySelector("#table").children[0].children[rowindex].children[columnindex].innerHTML ;
+    // console.log(tablcell)
+    // tablcell.innertext = newtext;
+    // console.log(tablcell)
+     document.getElementsByTagName('tr')[rowindex].getElementsByTagName('td')[columnindex].innerHTML=newtext
+}
+
+modifytablecel(0,1, 'raj')
+</script>
